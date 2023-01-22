@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Enter Your Name">
+    <br>
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter Your Email">
+    <br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password">
+    <br>
+    <label >Age</label>
+    <input type="number" name='age' min="20" max="30" placeholder="25">
+    <br>
+    <label>Search</label>
+    <input type="search" name="Search" placeholder="search something">
+    <button>search</button>
+    <br>
+    <label>City</label>
+    <!-- list="citylist " : keep in mind whatever the name of parameter always keep 
+    the name similar to it when we create datalist -->
+
+    <input type="text" name="city" placeholder="Enter your city" list="citylist">
+    <datalist id="citylist">
+        <option value="Noida">Noida</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Jammu">Jammu</option>
+        <option value="Vietnam">Vietnam</option>
+    </datalist>
+    <br>
+    <label>DOB</label>
+    <input type="date" name="dob">
+    <br>
+    <label>DateTime</label>
+    <input type="datetime-local" name="DateTime">
+    <br>
+    <label>Week</label>
+    <input type="week" name="Week">
+    <br>
+    <label>Gender</label>
+    <!-- if we change the name ="gender" to differnt name then it will
+    radio button will not work properly
+if i want to choose one option out of given option then i must have to keep the name
+same of all "name" like in this case i kept "gender"   -->
+    <input type="radio" name="gender" checked="Male">Male
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Other
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

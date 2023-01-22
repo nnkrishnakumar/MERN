@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Get method: if we use get method all the input data will be appended 
+    to the page url as "query parameter" 
+
+    Post method: if we use post method data will be "sent secretly in body parameter" 
+    
+    enctype: this parameter is required if we have to "upload any media file into form"-->
+<body>
+    <form name="myform" id="myform" class="sample" action=""
+    method="" enctype="multipart/form-data">
+    <label >Name</label>
+    <!-- name :will use when we need to get the value from programming language like javascript or anyother. -->
+    
+    <input type="text" name="Name" id ="name" class="sample" placeholder="Enter Your Name:" 
+    minlength="3" maxlength="10" required value="Krishna kumar">
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
