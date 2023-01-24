@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            color: white;
+            margin: 14px;
+           /* display: inline;   --> when we activate this command then our block appear in the same line and box size and width does not supportival */
+            /* display : inline block --> if we want to see all the block in the same line then we use mention command front of the line */
+            display: inline-block;
+        }
+
+        /*if we want to display all the block in the same line then we have to mention use inline */
+
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: green;
+        }
+        #box3{
+            background-color: orange;
+            /*display: none; -> if want to make our element invisible and require space then we use given syntex*/ 
+            visibility: hidden;  /*-> it will simply provide space in  row and hide the element*/ 
+        }
+        #box4{
+            background-color: aqua;
+        }
+        #box5{
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- display:
+        1. none : used to hide an item
+        2. inline : use to align more then one item in a row, in that case we can't manage height and width 
+        3. block : use to align one item in one row, in that case we can manage height and width
+        4. inline-block: use to align more then one item in line in that case manage height and width
+    
+    Note : inline we donot can't manage height width-->
+
+    <!-- shortcut to get dive tag faster is .name it will create a div tage with the same class name like <div class=name > -->
+    <div class="main">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+    </div>
+</body>
+</html>
